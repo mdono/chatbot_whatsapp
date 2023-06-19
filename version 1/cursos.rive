@@ -1,0 +1,44 @@
++ hola
+- Hola, Soy un robot que está para asistirte, y esta es la información que te puedo brindar\nNuestros teléfonos\nNuestra dirección\nPágina web\nHorarios\nEventos\n
+! var lunes = Los eventos del lunes\nProgramación con Lenguaje PHP - Costo Q.100.00 \nBases de datos MySQL - Costo Q.100.00\n
+! var martes = Los eventos del Martes \nLenguaje de Programación Java - Costo Q.200.00\nBases de datos Oracle I - Costo Q.100.00\n
+! var miercoles = Los eventos del miércoles \nBases de datos MS SQL Server - Costo Q.100.00\nBases de datos Oracle II - Costo Q.100.00\n
+! var jueves = Los eventos del jueves \nLenguaje de Programación en Python - Costo Q.200.00\nLenguaje de Programación en NodeJS - Costo Q.200.00\n
+! var viernes = Los eventos del viernes \nAcademia Oracle I Q.100.00\nTacos 15.50 \n
+! var sabado = Los eventos del Sábado\nDesarrollo de juegos 2D con Java - Costo 200.00 \nBases de datos Oracle III - Costo Q.100.00\n
+! var domingo = Los domingo esta cerrado
+! var horario = Lunes abrimos de 07:00 a 22:00\nMartes abrimos de 07:00 a 22:00\nMiércoles abrimos de 07:00 a 22:00\nJueves abrimos de 07:00 a 22:00\nViernes abrimos de 07:00 a 22:00\nSábados abrimos de 08:00 a 18:00\nDomingos esta cerrado\n
++ lunes *
+- <bot lunes>
++ martes *
+- <bot martes>
++ miercoles *
+- <bot miercoles>
++ jueves *
+- <bot jueves>
++ viernes *
+- <bot viernes>
++ sabado *
+- <bot sabado>
++ domingo *
+- <bot domingo>
++ (eventos|cursos|evento|curso) *
+- <bot lunes> \n <bot martes> \n <bot miercoles> \n <bot jueves> \n <bot viernes> \n <bot sabado> \n <bot domingo>
++ como estas
+@ hola
++ que onda
+@ hola
++ hay alguien*
+@ hola
++ (telefono|celular|cel|movil) *
+- Nuestro telefono es 502 2320 0000
++ (direccion|ubicacion|lugar) *
+- Nuestra direccion INTECAP PERIFÉRICO, 14 Calle 31-30, Colonia Ciudad de Plata II, zona 7.
+- Nos encontramos ubicados en la Colonia Ciudad de Plata II, zona 7, Guatemala, Guatemala
++ (pagina web|web|pagina|sitio web) *
+- Visitanos en https://intecap.edu.gt/
++ (hora|horarios|dias|abierto|horario) *
+- <bot horario>
++ *
+- Recuerda que soy un robot, me podrías preguntar de otra forma
+- Intenta hacer tu pregunta de otra manera.

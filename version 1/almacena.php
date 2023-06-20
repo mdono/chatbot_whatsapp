@@ -22,7 +22,7 @@ function almacena($recibido, $enviado, $id, $timestamp, $telefono_cliente)
   if ($cantidad == 0) {
     //VAMOS A RESPONDER A WHATSAPP
     //TOKEN DE FB
-    $token = 'EAASaxzMtZB9oBACTihYub3YxMZABZCfaXNeKJxJrl13m5cGA0GZCV1PCKwavGslUOjhUBAXGNipFztPqc2lpjcsRSEbRDy12auPNlf1fI9Qw8pOFGuaebPnLoWtpOVEw7t2BeZBIUgUVnSGnzbhPryLSO6QWZA6LznMP0Me0E7JXyZCPZCP0gCZB8tLtgoCXvw3ueWppZC6I8CKZCyI2qRD3F0Cf3TJerUzFSAZD';
+    $token = 'EAASaxzMtZB9oBAEtsfNVZAZBTB8XuZA9DAi6nnElnpQZAiKD3eBwogreclRr6FWGZC9NyevHcyhw6RQQbK9eeMtnNPWKNxlRTHnKdyqq2kPYS0ClmPp2bmSs6HlSRtqr9qvBBL9Ab5xZCdR5GZApJR6GrjDeZAx5U2U7eN7PmENZBN416x49ZBuVrEzZBDq2ZA536VJcqAZBPWZBLRKwZCtZASuSQHCcVBjMeIiI8zH0ZD';
     //TELEFONO
     $telefono = '50254184723';
     //URL A DONDE SE ENVIA EL MENSAJE
@@ -52,7 +52,7 @@ function almacena($recibido, $enviado, $id, $timestamp, $telefono_cliente)
     $respuesta = json_decode(curl_exec($curl), true);
 
     //IMPRIMIENDO LA RESPUESTA
-    print_r($respuesta);
+    //print_r($respuesta);
 
     //OBTENER EL CODIGO DE LA RESPUESTA
     $estatus_code = curl_getinfo($curl, CURLINFO_HTTP_CODE);

@@ -37,8 +37,16 @@ $timestamp = $baseMensaje['timestamp'];
 if ($mensaje != null) {
     $rivescript = new Rivescript();
     $rivescript->load('cursos.rive');
+
     //OBTENER RESPUESTA
     $respuesta = $rivescript->reply($mensaje);
+
+    if ($respuesta == "__chatgpt__") {
+      //CHATGPT
+      require_once './chatgpt.php';
+      $respuesta = preguntarChatGPT($mensaje);
+    }    
+    
     file_put_contents("./data.txt", $respuesta);
     require_once './almacena.php';
     almacena($mensaje, $respuesta, $id, $timestamp, $telefono_cliente);

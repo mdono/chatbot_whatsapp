@@ -40,5 +40,6 @@
 + (hora|horarios|dias|abierto|horario) *
 - <bot horario>
 + *
-- Recuerda que soy un robot, me podrías preguntar de otra forma
-- Intenta hacer tu pregunta de otra manera.
+// - Recuerda que soy un robot, me podrías preguntar de otra forma
+// - Intenta hacer tu pregunta de otra manera. N/A
+- __chatgpt__

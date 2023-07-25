@@ -1,7 +1,7 @@
 <?php
 function preguntarChatGPT($pregunta) {
     //API KEY DE CHATGPT
-    $apikey = "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";
+    $apikey = "API_KEY";
 
     //INICIAR LA CONSULTA DEL CURL
     $curl = curl_init();

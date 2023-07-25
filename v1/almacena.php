@@ -22,9 +22,9 @@ function almacena($recibido, $enviado, $id, $timestamp, $telefono_cliente)
   if ($cantidad == 0) {
     //VAMOS A RESPONDER A WHATSAPP
     //TOKEN DE FB
-    $token = 'EAASaxzMtZB9oBAEtsfNVZAZBTB8XuZA9DAi6nnElnpQZAiKD3eBwogreclRr6FWGZC9NyevHcyhw6RQQbK9eeMtnNPWKNxlRTHnKdyqq2kPYS0ClmPp2bmSs6HlSRtqr9qvBBL9Ab5xZCdR5GZApJR6GrjDeZAx5U2U7eN7PmENZBN416x49ZBuVrEzZBDq2ZA536VJcqAZBPWZBLRKwZCtZASuSQHCcVBjMeIiI8zH0ZD';
+    $token = 'TOKEN_KEY';
     //TELEFONO
-    $telefono = '50254184723';
+    $telefono = 'TELEFONO';
     //URL A DONDE SE ENVIA EL MENSAJE
     $url = 'https://graph.facebook.com/v17.0/116542267997823/messages';
     $mensaje = ''
